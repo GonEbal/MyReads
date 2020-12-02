@@ -37,11 +37,11 @@ class BookShelf extends Component {
 		} else {
 			url = 'https://img.favpng.com/19/10/9/question-mark-symbol-sign-computer-icons-png-favpng-T3t3e8dw8dHkGeyPW3MKvVewM.jpg'
 		}
-		let author = ''
+		let authors = ''
 		if (book.authors) {
-			author = book.authors[0]
+			authors = (book.authors).join(', ');
 		} else {
-			author = 'Unknown'
+			authors = 'Unknown'
 		}
 		return (
 			<div className="book">
@@ -60,7 +60,7 @@ class BookShelf extends Component {
 	          	</div>
 	        	</div>
 	        	<div className="book-title">{book.title}</div>
-	        	<div className="book-authors">{author}</div>
+	        	<div className="book-authors">{authors}</div>
 	      	</div>
       	)
 	}
