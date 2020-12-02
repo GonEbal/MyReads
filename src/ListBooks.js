@@ -3,7 +3,6 @@ import BookShelf from './BookShelf'
 import { Link } from 'react-router-dom'
 
 class ListBooks extends Component {
-
   onAddBook = (book, shelf) => {
     this.props.onAddBook(book, shelf);
   };
@@ -18,7 +17,6 @@ class ListBooks extends Component {
     } else {
       shelfName = 'Read'
     }
-
     return (
       <div>
         <div className="bookshelf">

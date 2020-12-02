@@ -26,7 +26,6 @@ class BooksApp extends React.Component {
       .then(() => {
         this.componentDidMount()
       })
-
   }
 
   render() {
@@ -40,7 +39,7 @@ class BooksApp extends React.Component {
             </div>
             <div className="list-books-content">
               {categories.map(category => (
-              <ListBooks 
+              <ListBooks
                 key = {category.name}
                 books={books}
                 category={category}
@@ -50,9 +49,8 @@ class BooksApp extends React.Component {
             </div>
           </div>
           )} />
-
           <Route exact path='/search' render={() => (
-            <SearchBooks 
+            <SearchBooks
               onAddBook={this.onAddBook}
               books={books}
             />

@@ -16,7 +16,6 @@ class BookShelf extends Component {
 		    }));
 		}
 	}
-
 	handleChange = event => {
 		const { value } = event.target;
 
@@ -25,7 +24,6 @@ class BookShelf extends Component {
 	    }));
 	    this.handleSubmit(value)
 	  };
-
 	handleSubmit = shelf => {
 		const book = this.props.book
 	    this.props.onAddBook(book, shelf);
@@ -68,4 +66,4 @@ class BookShelf extends Component {
 	}
 }
 
-export default BookShelf;
+export default BookShelf

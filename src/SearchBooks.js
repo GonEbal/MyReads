@@ -8,19 +8,16 @@ class SearchBooks extends Component {
 		query: '',
 		showingBooksSearch: []
 	}
-
 	updateQuery = (query) => {
 		this.setState(() => ({
 			query: query
 		}))
 		this.updateSearch(query)
 	}
-
 	handleSubmit(data) {
 	    alert('Your favorite book is: ' + data.book.title);
 	    data.preventDefault();
 	  }
-
 	updateSearch = (query) => {
 	  	let new_array = []
 
@@ -39,7 +36,7 @@ class SearchBooks extends Component {
 	  					const myBooksIds = myBooks.map(myBook => myBook.id);
 	  					const searchBooksIds = searchBooks.map(searchBook => searchBook.id);
 
-	  					const searchBooksExcludingMine = searchBooks.filter((searchBook) => 
+	  					const searchBooksExcludingMine = searchBooks.filter((searchBook) =>
 	  						!myBooksIds.includes(searchBook.id)
 	  					)
 
@@ -62,24 +59,22 @@ class SearchBooks extends Component {
 		}))
 	  	}
 	}
-
 	onAddBook = (book, shelf) => {
 		this.props.onAddBook(book, shelf);
 	}
-
 	render() {
 		const { query, showingBooksSearch } = this.state
 
 		return (
 			<div className="search-books">
 	            <div className="search-books-bar">
-	              <Link 
+	              <Link
 	              className="close-search"
 	              to='/'
 	              >Close</Link>
 	              <div className="search-books-input-wrapper">
-	                	<input 
-	                		type="text" 
+	                	<input
+	                		type="text"
 	                		placeholder="Search by title or author"
 	                		value={query}
 	                		onChange={(event) => this.updateQuery(event.target.value)}
@@ -91,7 +86,7 @@ class SearchBooks extends Component {
 		        	<ol className="books-grid">
 		        		{showingBooksSearch.map((book) => (
 		        			<li key={book.id}>
-		        				<BookShelf 
+		        				<BookShelf
 		        				book={book}
 		        				onAddBook={this.onAddBook}
 		        				/>
@@ -104,4 +99,4 @@ class SearchBooks extends Component {
 	}
 }
 
-export default SearchBooks;
+export default SearchBooks
