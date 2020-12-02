@@ -1,9 +1,16 @@
-# MyReads Project
+# MyReads: A Book Tracking App
+
+This Web Application allows you to select and catagorize books you have read, are currently reading, or want to read!
 
 To get started right away:
 
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
+
+You can search for books you want to add to your library.
+But search terms are limited! You can find them in SEARCH_TERMS.md.
+
+The app is using API provided by UDACITY. You can find it in BooksAPI.js.
 
 ## What You're Getting
 ```bash
@@ -13,18 +20,18 @@ To get started right away:
 ├── package.json # npm package manager file.
 ├── public
 │   ├── favicon.ico
-│   └── index.html 
+│   └── index.html
 └── src
     ├── App.css # Styles for the app.
-    ├── App.js # This is the root of my app. Contains static HTML right now.
+    ├── App.js # This is the root of my app.
     ├── App.test.js # Used for testing. Provided with Create React App.
     ├── BooksAPI.js # A JavaScript API
-    ├── icons 
+    ├── icons
     │   ├── add.svg
     │   ├── arrow-back.svg
     │   └── arrow-drop-down.svg
     ├── index.css # Global styles.
-    └── index.js # 
+    └── index.js #
 ```
 
 ## Backend Server
@@ -53,7 +60,7 @@ update(book, shelf)
 ```
 
 * book: `<Object>` containing at minimum an `id` attribute
-* shelf: `<String>` contains one of ["wantToRead", "currentlyReading", "read"]  
+* shelf: `<String>` contains one of ["wantToRead", "currentlyReading", "read"]
 * Returns a Promise which resolves to a JSON object containing the response data of the POST request
 
 ### `search`
