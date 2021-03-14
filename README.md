@@ -1,6 +1,8 @@
-# MyReads: A Book Tracking App
+# [MyReads](https://github.com/GonEbal/MyReads): A Book Tracking App
 
 This Web Application allows you to select and catagorize books you have read, are currently reading, or want to read!
+
+![gif #1](public/preview.gif)
 
 To get started right away:
 
