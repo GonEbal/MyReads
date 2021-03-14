@@ -6,8 +6,8 @@ This Web Application allows you to select and catagorize books you have read, ar
 
 To get started right away:
 
-* install all project dependencies with `npm install`
-* start the development server with `npm start`
+* install all project dependencies with `npm install` or `yarn`
+* start the development server with `npm start` or `yarn start`
 
 You can search for books you want to add to your library.
 But search terms are limited! You can find them in SEARCH_TERMS.md.
