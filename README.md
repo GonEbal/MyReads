@@ -2,7 +2,7 @@
 
 This Web Application allows you to select and catagorize books you have read, are currently reading, or want to read!
 
-![gif #1](public/preview.gif)
+![gif #1](public/newpreview.gif)
 
 To get started right away:
 
